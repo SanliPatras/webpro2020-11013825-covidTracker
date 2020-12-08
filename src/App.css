@@ -1,38 +1,70 @@
+.card-container {
+  background-color: yellow;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: #eeeeee;
+  font-family: sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 80%;
+  margin: 0 auto;
+  background: #ffffff;
+  border-bottom: 4px solid orangered;
 }
 
-.App-link {
-  color: #61dafb;
+.TotalConfirmed,
+.TotalDeaths,
+.TotalRecovered {
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.TotalConfirmed {
+  color: orange;
+}
+.TotalDeaths {
+  color: red;
+}
+.TotalRecovered {
+  color: green;
+}
+
+table {
+  border-collapse: separate;
+  width: 80%;
+  margin: 0 auto;
+  border-spacing: 0 12px;
+}
+
+table thead th {
+  background: #a39898;
+  border-bottom: 4px solid blueviolet;
+}
+
+table thead th {
+  padding: 18px 12px;
+  text-align: left;
+}
+
+table tbody tr {
+  background: yellowgreen;
+}
+
+table tbody tr td {
+  padding: 18px 12px;
+  text-align: left;
 }
